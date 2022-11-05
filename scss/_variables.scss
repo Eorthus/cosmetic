@@ -1,0 +1,42 @@
+:root {
+    --black:black;
+    --white: white;
+    --gray: #9a9a9a;
+    --gray-dark: #4d4d4d;
+    --pink: #f36483;
+    --link-pink:#F06281;
+    --btn-pink:#F16382;
+    --light-pink:rgba(255, 203, 211, 0.79);
+    --light-blue:linear-gradient(180.46deg, #BEDEF7 0.4%, #BEDEF7 99.6%);
+    --salon-back:linear-gradient(180deg, rgba(214, 87, 159, 0) 0%, #D6579F 30.86%);
+    --back-pink:#FFCFD7;
+    --pink-gradient:linear-gradient(180deg, #FFCFD7 0%, rgba(255, 207, 215, 0) 100%);
+
+    --icon-background: #f0f0f3;
+    --icon-shadow: 10px 10px 30px rgba(174, 174, 192, 0.4), inset 10px 10px 10px #ffffff,
+        inset -10px -10px 10px rgba(174, 174, 192, 0.25);
+    --icon-background2: linear-gradient(180deg, #ffd066 0%, #fcac4e 100%);
+    --icon-background3:linear-gradient(180deg, #F3B9C8 0%, #FE83A4 100%);
+    --icon-background4:linear-gradient(180deg, #F5AACA 0%, #E26DB3 100%, #FF069C 100%, #EE5EB4 100%);
+
+    --block-shadow:0px 2px 8px rgba(0, 0, 0, 0.15);
+
+    --mini-font:12px;
+    --nav-font: 14px;
+    --menu-font: 15px;
+    --pref-font: 17px;
+    --premiddle-font:20px;
+    --center-font:24px;
+    --middle-font: 22px;
+    --max-font: 30px;
+    --max-weight: 700;
+    --middle-weight: 500;
+    --mini-weight:400;
+
+    --padding-top: 60px;
+    --padding-bottom: 30px;
+    --main-padding:24px;
+
+    --border:6px;
+    --more-border:10px;
+}

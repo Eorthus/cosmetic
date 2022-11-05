@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:var(--white) ;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+.container{
+    max-width: 975px;
+    margin:auto;
+}
+.paddings{
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+}
