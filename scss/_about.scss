@@ -40,6 +40,7 @@ margin-left: 4px;
         display: flex;
     font-size: var(--menu-font);
     color: var(--gray-dark);
+    align-items: center;
     }
     &__icon{
         width: 20px;
@@ -857,45 +858,24 @@ overflow: hidden;
         }
     }
     &__container {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        gap: var(--main-padding);
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        @media screen and (max-width: 645px) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
     &__item {
-        width: 31%;
-        padding-right: var(--main-padding);
-        border-radius: 10px;
-        padding-bottom: var(--main-padding);
+        border-radius: var(--more-border);
         overflow: hidden;
-
-        @media screen and (max-width: 768px) {
-            width: 30%;
-        }
-        @media screen and (max-width: 645px) {
-            width: 47%;
-        }
-        @media screen and (max-width: 450px) {
-            width: 45%;
-        }
-        &:nth-child(3n) {
-            padding-right: 0;
-        }
-        @media screen and (max-width: 645px) {
-            padding-right: 0;
-            &:nth-child(3n) {
-                padding-right: unset;
-            }
-            &:nth-child(2n) {
-                padding-right: unset;
-                padding-left: var(--main-padding);
-            }
+        img{
+            width: 100%;
         }
         &:last-child {
-            width: 100%;
+            grid-column: 1 / span 3;
             @media screen and (max-width: 645px) {
-                width: 47%;
-            }
-            @media screen and (max-width: 450px) {
-                width: 45%;
+                grid-column: unset;
             }
         }
     }
@@ -936,6 +916,7 @@ overflow: hidden;
         display: flex;
         font-size: var(--menu-font);
         color: var(--link-pink);
+        align-items: center;
     }
     &__icon {
         width: 20px;
@@ -946,7 +927,7 @@ overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 5px;
+        margin-right: 10px;
         position: relative;
         &::after {
             content: "";

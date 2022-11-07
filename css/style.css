@@ -173,6 +173,9 @@ ul, ol {
   display: flex;
   font-size: var(--menu-font);
   color: var(--gray-dark);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about-menu__icon {
@@ -1426,69 +1429,40 @@ ul, ol {
 }
 
 .about-category__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  gap: var(--main-padding);
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 645px) {
+  .about-category__container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 .about-category__item {
-  width: 31%;
-  padding-right: var(--main-padding);
-  border-radius: 10px;
-  padding-bottom: var(--main-padding);
+  border-radius: var(--more-border);
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
-  .about-category__item {
-    width: 30%;
-  }
-}
-
-@media screen and (max-width: 645px) {
-  .about-category__item {
-    width: 47%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .about-category__item {
-    width: 45%;
-  }
-}
-
-.about-category__item:nth-child(3n) {
-  padding-right: 0;
-}
-
-@media screen and (max-width: 645px) {
-  .about-category__item {
-    padding-right: 0;
-  }
-  .about-category__item:nth-child(3n) {
-    padding-right: unset;
-  }
-  .about-category__item:nth-child(2n) {
-    padding-right: unset;
-    padding-left: var(--main-padding);
-  }
-}
-
-.about-category__item:last-child {
+.about-category__item img {
   width: 100%;
 }
 
-@media screen and (max-width: 645px) {
-  .about-category__item:last-child {
-    width: 47%;
-  }
+.about-category__item:last-child {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 645px) {
   .about-category__item:last-child {
-    width: 45%;
+    grid-column: unset;
   }
 }
 
@@ -1548,6 +1522,9 @@ ul, ol {
   display: flex;
   font-size: var(--menu-font);
   color: var(--link-pink);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about-category__icon {
@@ -1566,7 +1543,7 @@ ul, ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 5px;
+  margin-right: 10px;
   position: relative;
 }
 
