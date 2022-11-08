@@ -494,6 +494,8 @@ ul, ol {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -531,6 +533,7 @@ ul, ol {
 @media screen and (max-width: 576px) {
   .about-info__text {
     margin-bottom: var(--menu-font);
+    margin-left: 0;
   }
 }
 
@@ -959,12 +962,20 @@ ul, ol {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 0;
+    padding-right: 0;
   }
 }
 
 .about-shopin__text {
   margin-left: 20px;
   font-size: var(--pref-font);
+}
+
+@media screen and (max-width: 576px) {
+  .about-shopin__text {
+    margin-left: 0;
+  }
 }
 
 .about-shopin__title {
@@ -1458,6 +1469,7 @@ ul, ol {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
+  overflow: visible;
 }
 
 @media screen and (max-width: 645px) {
@@ -1565,7 +1577,7 @@ ul, ol {
 }
 
 .about-partner {
-  padding-top: var(--padding-bottom);
+  padding-top: var(--padding-top);
   padding-bottom: var(--padding-top);
 }
 

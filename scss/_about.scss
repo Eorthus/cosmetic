@@ -251,6 +251,8 @@ position: relative;
             flex-direction: column;
             text-align: center;
             align-items: center;
+            margin-left:0;
+            padding-right: 0;
         }
     }
     &__icon {
@@ -274,6 +276,8 @@ position: relative;
         font-size: var(--pref-font);
         @media screen and (max-width: 576px) {
             margin-bottom: var(--menu-font);
+            margin-left: 0;
+
         }
     }
     &__title {
@@ -538,11 +542,16 @@ overflow: hidden;
             flex-direction: column;
             text-align: center;
             align-items: center;
+            margin-left: 0;
+            padding-right: 0;
         }
     }
     &__text {
         margin-left: 20px;
         font-size: var(--pref-font);
+        @media screen and (max-width:576px){
+            margin-left:0;
+        }
     }
     &__title {
         font-weight: var(--max-weight);
@@ -874,8 +883,10 @@ overflow: hidden;
         }
         &:last-child {
             grid-column: 1 / span 3;
+            overflow: visible;
             @media screen and (max-width: 645px) {
                 grid-column: unset;
+
             }
         }
     }
@@ -946,7 +957,7 @@ overflow: hidden;
 }
 
 .about-partner {
-    padding-top: var(--padding-bottom);
+    padding-top: var(--padding-top);
     padding-bottom: var(--padding-top);
     &__h {
         display: block;
@@ -976,6 +987,7 @@ overflow: hidden;
         border-radius: var(--more-border);
         &:last-child {
             margin-right: 0;
+            
         }
         @media screen and (max-width: 576px) {
             align-items: center;
